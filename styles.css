@@ -1,0 +1,130 @@
+:root {
+  --bg-deep: #0f1f33;
+  --bg-mid: #1f3550;
+  --bg-soft: #e9f1fb;
+  --accent-warm: #ffb074;
+  --accent-warm-2: #ffd4ad;
+  --text-main: #f4f8fd;
+  --text-dark: #1b2735;
+  --surface: rgba(255, 255, 255, 0.78);
+  --border: rgba(255, 255, 255, 0.48);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--text-main);
+  min-height: 100vh;
+  background: linear-gradient(150deg, #0b1b2b 0%, #24415e 45%, #f0f4f9 100%);
+}
+
+.bg {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 14% 18%, rgba(255, 186, 138, 0.35) 0%, rgba(255, 186, 138, 0) 34%),
+    radial-gradient(circle at 90% 10%, rgba(158, 194, 255, 0.32) 0%, rgba(158, 194, 255, 0) 36%),
+    radial-gradient(circle at 50% 100%, rgba(255, 230, 207, 0.35) 0%, rgba(255, 230, 207, 0) 40%);
+  z-index: -1;
+}
+
+.hero {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 3.5rem 1.2rem 1.4rem;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin: 0;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(255, 186, 138, 0.24);
+  border: 1px solid rgba(255, 205, 170, 0.55);
+  color: #fff6ee;
+  font-weight: 600;
+  font-size: 0.78rem;
+}
+
+h1 {
+  margin: 0.8rem 0 0.4rem;
+  color: #f8fbff;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  line-height: 1.15;
+}
+
+.subtitle {
+  margin: 0;
+  color: #d8e7fb;
+  max-width: 62ch;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 1.2rem 2.8rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.day-card,
+.tips {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1rem 0.8rem;
+  color: var(--text-dark);
+  backdrop-filter: blur(4px);
+}
+
+.day-head {
+  margin-bottom: 0.55rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+h2 {
+  margin: 0;
+  color: #152235;
+  font-size: 1.2rem;
+}
+
+.day-head p {
+  margin: 0;
+  color: #3f5772;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+h3 {
+  margin: 0 0 0.45rem;
+  color: #152235;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  line-height: 1.55;
+}
+
+li + li {
+  margin-top: 0.45rem;
+}
+
+strong {
+  color: #183154;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding-top: 2.3rem;
+  }
+}
