@@ -3,55 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NYC in 3 Days | Itinerary</title>
-  <meta name="description" content="A practical 3-day New York City itinerary with neighborhoods, food, and iconic sights." />
+  <title>Meredith Purdy's NYC in 3 Days | Itinerary</title>
+  <meta name="description" content="A practical 3-day New York City itinerary curated for Meredith Purdy with neighborhoods, food, and iconic sights." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="bg"></div>
   <header class="hero">
-    <p class="eyebrow">New York City Guide</p>
-    <h1>Perfect 3-Day NYC Itinerary</h1>
-    <p class="subtitle">Built for first-time visitors who want iconic sights, great food, and efficient routing.</p>
+    <p class="eyebrow">Meredith Purdy's NYC Guide</p>
+    <h1>Meredith Purdy's 3-Day NYC Itinerary</h1>
+    <p class="subtitle">A focused city plan built for Meredith Purdy with strong routing, good pacing, and high-value stops.</p>
   </header>
 
   <main class="container">
-    <section class="day-card">
+    <section class="controls">
+      <div class="control-row">
+        <label for="dayFilter">View day:</label>
+        <select id="dayFilter">
+          <option value="all">All days</option>
+          <option value="1">Day 1</option>
+          <option value="2">Day 2</option>
+          <option value="3">Day 3</option>
+        </select>
+      </div>
+      <div class="control-row">
+        <label for="budgetLevel">Daily budget:</label>
+        <select id="budgetLevel">
+          <option value="budget">Budget (~$120/day)</option>
+          <option value="standard" selected>Standard (~$220/day)</option>
+          <option value="premium">Premium (~$380/day)</option>
+        </select>
+        <p id="budgetOutput" class="budget-output"></p>
+      </div>
+    </section>
+
+    <section class="day-card" data-day="1">
       <div class="day-head">
         <h2>Day 1</h2>
         <p>Midtown + Central Park + Broadway</p>
       </div>
       <ul>
-        <li><strong>Morning:</strong> Breakfast near Bryant Park, visit NY Public Library, then stroll 5th Avenue.</li>
-        <li><strong>Afternoon:</strong> Central Park loop (Bethesda Terrace, Bow Bridge), quick lunch on Upper West Side.</li>
-        <li><strong>Evening:</strong> Times Square at sunset and a Broadway show.</li>
+        <li><strong>Morning:</strong> Breakfast near Bryant Park, visit NY Public Library, then stroll 5th Avenue. <a href="https://maps.google.com/?q=Bryant+Park+New+York" target="_blank" rel="noopener noreferrer">Map</a></li>
+        <li><strong>Afternoon:</strong> Central Park loop (Bethesda Terrace, Bow Bridge), quick lunch on Upper West Side. <a href="https://maps.google.com/?q=Bethesda+Terrace+New+York" target="_blank" rel="noopener noreferrer">Map</a></li>
+        <li><strong>Evening:</strong> Times Square at sunset and a Broadway show. <a href="https://maps.google.com/?q=Times+Square+New+York" target="_blank" rel="noopener noreferrer">Map</a></li>
       </ul>
     </section>
 
-    <section class="day-card">
+    <section class="day-card" data-day="2">
       <div class="day-head">
         <h2>Day 2</h2>
         <p>Lower Manhattan + Brooklyn Views</p>
       </div>
       <ul>
-        <li><strong>Morning:</strong> Statue of Liberty/Ellis Island ferry or Staten Island Ferry for budget option.</li>
-        <li><strong>Afternoon:</strong> 9/11 Memorial, Wall Street, then lunch in Seaport.</li>
-        <li><strong>Evening:</strong> Walk Brooklyn Bridge, dinner in DUMBO, skyline photos at Brooklyn Bridge Park.</li>
+        <li><strong>Morning:</strong> Statue of Liberty/Ellis Island ferry or Staten Island Ferry for budget option. <a href="https://maps.google.com/?q=Battery+Park+Ferry+Terminal+New+York" target="_blank" rel="noopener noreferrer">Map</a></li>
+        <li><strong>Afternoon:</strong> 9/11 Memorial, Wall Street, then lunch in Seaport. <a href="https://maps.google.com/?q=9%2F11+Memorial+New+York" target="_blank" rel="noopener noreferrer">Map</a></li>
+        <li><strong>Evening:</strong> Walk Brooklyn Bridge, dinner in DUMBO, skyline photos at Brooklyn Bridge Park. <a href="https://maps.google.com/?q=Brooklyn+Bridge+Park+New+York" target="_blank" rel="noopener noreferrer">Map</a></li>
       </ul>
     </section>
 
-    <section class="day-card">
+    <section class="day-card" data-day="3">
       <div class="day-head">
         <h2>Day 3</h2>
         <p>Museums + Village + Skyline</p>
       </div>
       <ul>
-        <li><strong>Morning:</strong> Choose one: The Met or MoMA.</li>
-        <li><strong>Afternoon:</strong> Lunch in Greenwich Village, explore SoHo + Washington Square Park.</li>
-        <li><strong>Evening:</strong> High Line walk and sunset at Hudson Yards or Top of the Rock.</li>
+        <li><strong>Morning:</strong> Choose one: The Met or MoMA. <a href="https://maps.google.com/?q=The+Metropolitan+Museum+of+Art+New+York" target="_blank" rel="noopener noreferrer">Map</a></li>
+        <li><strong>Afternoon:</strong> Lunch in Greenwich Village, explore SoHo + Washington Square Park. <a href="https://maps.google.com/?q=Washington+Square+Park+New+York" target="_blank" rel="noopener noreferrer">Map</a></li>
+        <li><strong>Evening:</strong> High Line walk and sunset at Hudson Yards or Top of the Rock. <a href="https://maps.google.com/?q=The+High+Line+New+York" target="_blank" rel="noopener noreferrer">Map</a></li>
       </ul>
     </section>
 
@@ -60,9 +81,16 @@
       <ul>
         <li>Use contactless tap-to-pay for subway/buses (OMNY).</li>
         <li>Book skyline attractions and Broadway tickets in advance.</li>
-        <li>Wear walking shoes; this plan averages 18k–24k steps/day.</li>
+        <li>Wear walking shoes; this plan averages 18k-24k steps/day.</li>
       </ul>
     </section>
+
+    <section class="notes">
+      <h3>My Trip Notes</h3>
+      <textarea id="tripNotes" rows="6" placeholder="Add reservation numbers, restaurant picks, and backups..."></textarea>
+      <p class="note-hint">Saved automatically in this browser.</p>
+    </section>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,13 +1,13 @@
 :root {
-  --bg-deep: #0f1f33;
-  --bg-mid: #1f3550;
-  --bg-soft: #e9f1fb;
-  --accent-warm: #ffb074;
-  --accent-warm-2: #ffd4ad;
-  --text-main: #f4f8fd;
-  --text-dark: #1b2735;
-  --surface: rgba(255, 255, 255, 0.78);
-  --border: rgba(255, 255, 255, 0.48);
+  --bg-deep: #26140f;
+  --bg-mid: #4a2418;
+  --bg-soft: #f2dfcf;
+  --accent-warm: #d36f38;
+  --accent-warm-2: #ffbf84;
+  --text-main: #fff3e8;
+  --text-dark: #311c14;
+  --surface: rgba(255, 243, 232, 0.84);
+  --border: rgba(255, 201, 156, 0.55);
 }
 
 * {
@@ -16,19 +16,19 @@
 
 body {
   margin: 0;
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   color: var(--text-main);
   min-height: 100vh;
-  background: linear-gradient(150deg, #0b1b2b 0%, #24415e 45%, #f0f4f9 100%);
+  background: linear-gradient(155deg, #1c0f0b 0%, #542b1d 46%, #d28d5e 100%);
 }
 
 .bg {
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(circle at 14% 18%, rgba(255, 186, 138, 0.35) 0%, rgba(255, 186, 138, 0) 34%),
-    radial-gradient(circle at 90% 10%, rgba(158, 194, 255, 0.32) 0%, rgba(158, 194, 255, 0) 36%),
-    radial-gradient(circle at 50% 100%, rgba(255, 230, 207, 0.35) 0%, rgba(255, 230, 207, 0) 40%);
+    radial-gradient(circle at 14% 18%, rgba(255, 156, 92, 0.32) 0%, rgba(255, 156, 92, 0) 34%),
+    radial-gradient(circle at 88% 8%, rgba(255, 199, 129, 0.28) 0%, rgba(255, 199, 129, 0) 36%),
+    radial-gradient(circle at 52% 100%, rgba(255, 224, 193, 0.34) 0%, rgba(255, 224, 193, 0) 40%);
   z-index: -1;
 }
 
@@ -43,23 +43,23 @@ body {
   margin: 0;
   padding: 0.3rem 0.7rem;
   border-radius: 999px;
-  background: rgba(255, 186, 138, 0.24);
-  border: 1px solid rgba(255, 205, 170, 0.55);
-  color: #fff6ee;
+  background: rgba(255, 155, 90, 0.22);
+  border: 1px solid rgba(255, 194, 137, 0.55);
+  color: #fff1e4;
   font-weight: 600;
   font-size: 0.78rem;
 }
 
 h1 {
   margin: 0.8rem 0 0.4rem;
-  color: #f8fbff;
+  color: #fff4ea;
   font-size: clamp(1.9rem, 4vw, 3rem);
   line-height: 1.15;
 }
 
 .subtitle {
   margin: 0;
-  color: #d8e7fb;
+  color: #ffd8b9;
   max-width: 62ch;
   line-height: 1.5;
 }
@@ -73,7 +73,9 @@ h1 {
 }
 
 .day-card,
-.tips {
+.tips,
+.notes,
+.controls {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -93,20 +95,20 @@ h1 {
 
 h2 {
   margin: 0;
-  color: #152235;
+  color: #3a2016;
   font-size: 1.2rem;
 }
 
 .day-head p {
   margin: 0;
-  color: #3f5772;
+  color: #7a4230;
   font-weight: 600;
   font-size: 0.92rem;
 }
 
 h3 {
   margin: 0 0 0.45rem;
-  color: #152235;
+  color: #3a2016;
 }
 
 ul {
@@ -120,7 +122,60 @@ li + li {
 }
 
 strong {
-  color: #183154;
+  color: #6a311e;
+}
+
+.controls {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.control-row {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+label {
+  font-weight: 600;
+  color: #5a2d1f;
+}
+
+select,
+textarea {
+  border: 1px solid #dcb694;
+  border-radius: 6px;
+  padding: 0.45rem 0.6rem;
+  font: inherit;
+  color: #311c14;
+  background: #fff7f1;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+.budget-output,
+.note-hint {
+  margin: 0;
+  color: #7a4230;
+  font-size: 0.9rem;
+}
+
+a {
+  color: #9a3f20;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
 }
 
 @media (max-width: 700px) {
