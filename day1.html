@@ -33,17 +33,21 @@
     <section class="day-card"><h3>Afternoon</h3><ul id="afternoonList"></ul></section>
     <section class="day-card"><h3>Date Night</h3><ul id="dateList"></ul></section>
     <section class="tips"><h3>NYC Insider Info</h3><ul id="insiderList"></ul></section>
+    <section class="controls">
+      <div class="section-switch">
+        <button class="section-btn active" data-section="morning">Morning</button>
+        <button class="section-btn" data-section="afternoon">Afternoon</button>
+        <button class="section-btn" data-section="date">Date Night</button>
+        <button class="section-btn" data-section="insider">Insider</button>
+      </div>
+    </section>
     <section class="day-card">
-      <h3>Map: Midtown + Central Park</h3>
-      <iframe class="map-frame" loading="lazy" src="https://maps.google.com/maps?q=Central%20Park%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+      <h3 id="mediaTitle">Map + Photos: Morning</h3>
+      <iframe id="detailMap" class="map-frame" loading="lazy" src="https://maps.google.com/maps?q=Bryant%20Park%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
     </section>
     <section class="day-card">
       <h3>Major Spots</h3>
-      <div class="photo-grid">
-        <img src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?auto=format&fit=crop&w=900&q=80" alt="Central Park in New York" />
-        <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=900&q=80" alt="Times Square at dusk" />
-        <img src="https://images.unsplash.com/photo-1568515387631-8b650bbcdb90?auto=format&fit=crop&w=900&q=80" alt="New York Public Library interior" />
-      </div>
+      <div id="photoGrid" class="photo-grid"></div>
     </section>
   </main>
   <script src="detail.js"></script>

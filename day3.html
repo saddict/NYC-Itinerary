@@ -33,17 +33,21 @@
     <section class="day-card"><h3>Afternoon</h3><ul id="afternoonList"></ul></section>
     <section class="day-card"><h3>Date Night</h3><ul id="dateList"></ul></section>
     <section class="tips"><h3>NYC Insider Info</h3><ul id="insiderList"></ul></section>
+    <section class="controls">
+      <div class="section-switch">
+        <button class="section-btn active" data-section="morning">Morning</button>
+        <button class="section-btn" data-section="afternoon">Afternoon</button>
+        <button class="section-btn" data-section="date">Date Night</button>
+        <button class="section-btn" data-section="insider">Insider</button>
+      </div>
+    </section>
     <section class="day-card">
-      <h3>Map: Village + High Line</h3>
-      <iframe class="map-frame" loading="lazy" src="https://maps.google.com/maps?q=The%20High%20Line%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+      <h3 id="mediaTitle">Map + Photos: Morning</h3>
+      <iframe id="detailMap" class="map-frame" loading="lazy" src="https://maps.google.com/maps?q=Metropolitan%20Museum%20of%20Art%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
     </section>
     <section class="day-card">
       <h3>Major Spots</h3>
-      <div class="photo-grid">
-        <img src="https://images.unsplash.com/photo-1529429611278-ec4b65f2f476?auto=format&fit=crop&w=900&q=80" alt="The Metropolitan Museum of Art entrance" />
-        <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?auto=format&fit=crop&w=900&q=80" alt="Washington Square Park arch" />
-        <img src="https://images.unsplash.com/photo-1519642918688-7e43b19245d8?auto=format&fit=crop&w=900&q=80" alt="The High Line in New York City" />
-      </div>
+      <div id="photoGrid" class="photo-grid"></div>
     </section>
   </main>
   <script src="detail.js"></script>

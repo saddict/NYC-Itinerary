@@ -67,7 +67,7 @@ h1 {
 .container {
   max-width: none;
   margin: 0;
-  padding: 0 0 2rem;
+  padding: 0 0.35rem 2rem;
   display: grid;
   gap: 0.55rem;
 }
@@ -78,7 +78,7 @@ h1 {
 .controls {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 9px;
   padding: 1rem 1rem 0.8rem;
   color: var(--text-dark);
   backdrop-filter: blur(4px);
@@ -264,6 +264,26 @@ a:hover {
   object-fit: cover;
   border-radius: 8px;
   border: 1px solid rgba(138, 90, 66, 0.35);
+}
+
+.section-switch {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.section-btn {
+  border: 1px solid #c8895d;
+  background: #fff3e8;
+  color: #5d2e1f;
+  border-radius: 6px;
+  padding: 0.35rem 0.55rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.section-btn.active {
+  background: #ffdcbf;
 }
 
 .back-link {
