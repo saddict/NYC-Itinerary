@@ -4,53 +4,48 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Day 3 Detail | Meredith and Adi NYC</title>
-  <meta name="description" content="Detailed Day 3 NYC plan for Meredith and Adi with insider tips and cheap amazing date-night ideas." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body data-day="3">
   <div class="bg"></div>
-  <header class="hero">
+  <header class="hero left-align">
     <p class="eyebrow">Day 3 Detail</p>
     <h1>Museum + Village + West Side Sunset</h1>
-    <p class="subtitle">Flexible culture day with low-friction transit and a strong last-night finish.</p>
+    <p class="subtitle">Detailed plan by budget with maps, images, and local strategy.</p>
     <a class="back-link" href="index.html">Back to main itinerary</a>
   </header>
-  <main class="container">
+  <main class="container left-align">
+    <section class="controls">
+      <div class="control-row">
+        <label for="budgetLevel">Trip budget:</label>
+        <select id="budgetLevel">
+          <option value="budget">Budget</option>
+          <option value="standard">Standard</option>
+          <option value="premium">Premium</option>
+        </select>
+      </div>
+      <p id="budgetOutput" class="budget-output"></p>
+    </section>
+    <section class="day-card"><h3>Morning</h3><ul id="morningList"></ul></section>
+    <section class="day-card"><h3>Afternoon</h3><ul id="afternoonList"></ul></section>
+    <section class="day-card"><h3>Date Night</h3><ul id="dateList"></ul></section>
+    <section class="tips"><h3>NYC Insider Info</h3><ul id="insiderList"></ul></section>
     <section class="day-card">
-      <h3>Morning Plan (9:00am-12:30pm)</h3>
-      <ul>
-        <li>Pick one major museum (The Met or MoMA) and pre-book timed entry.</li>
-        <li>Limit to 2-3 wings/exhibitions so you keep energy for afternoon walking.</li>
-        <li>Use museum cafes only for a quick break; lunch nearby is usually cheaper.</li>
-      </ul>
+      <h3>Map: Village + High Line</h3>
+      <iframe class="map-frame" loading="lazy" src="https://maps.google.com/maps?q=The%20High%20Line%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
     </section>
     <section class="day-card">
-      <h3>Afternoon Plan (12:30pm-5:30pm)</h3>
-      <ul>
-        <li>Head downtown to Greenwich Village for lunch and side streets.</li>
-        <li>Walk SoHo and Washington Square Park, then move west toward High Line.</li>
-        <li>Pause for coffee before sunset to avoid expensive rooftop drink spend.</li>
-      </ul>
-    </section>
-    <section class="day-card">
-      <h3>Cheap But Amazing Date-Night</h3>
-      <ul>
-        <li>Sunset walk on the High Line, then split plates in Chelsea Market area.</li>
-        <li>Optional upgrade: one paid observation deck, but skip paid drinks there.</li>
-        <li>Best low-cost finish: riverside walk with bakery dessert instead of lounge bars.</li>
-      </ul>
-    </section>
-    <section class="tips">
-      <h3>NYC Insider Info (Day 3)</h3>
-      <ul>
-        <li>Museum gift shops can consume time fast; set a 10-minute cap.</li>
-        <li>West Village and SoHo get crowded on weekends after 2:00pm.</li>
-        <li>For faster subway transfers, stand near the middle cars on most Manhattan lines.</li>
-      </ul>
+      <h3>Major Spots</h3>
+      <div class="photo-grid">
+        <img src="https://images.unsplash.com/photo-1529429611278-ec4b65f2f476?auto=format&fit=crop&w=900&q=80" alt="The Metropolitan Museum of Art entrance" />
+        <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?auto=format&fit=crop&w=900&q=80" alt="Washington Square Park arch" />
+        <img src="https://images.unsplash.com/photo-1519642918688-7e43b19245d8?auto=format&fit=crop&w=900&q=80" alt="The High Line in New York City" />
+      </div>
     </section>
   </main>
+  <script src="detail.js"></script>
 </body>
 </html>
