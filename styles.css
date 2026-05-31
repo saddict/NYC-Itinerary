@@ -35,7 +35,7 @@ body {
 .hero {
   max-width: none;
   margin: 0;
-  padding: 3.5rem 0 1rem;
+  padding: 3.5rem 0.35rem 1rem;
 }
 
 .eyebrow {
@@ -284,6 +284,10 @@ a:hover {
 
 .section-btn.active {
   background: #ffdcbf;
+}
+
+.time-card {
+  cursor: pointer;
 }
 
 .back-link {

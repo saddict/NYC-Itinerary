@@ -5,6 +5,7 @@ const detailMap = document.getElementById("detailMap");
 const photoGrid = document.getElementById("photoGrid");
 const mediaTitle = document.getElementById("mediaTitle");
 const sectionButtons = document.querySelectorAll(".section-btn");
+const timeCards = document.querySelectorAll(".time-card");
 let activeSection = "morning";
 
 const detailsData = {
@@ -212,6 +213,9 @@ if (saved && detailsData[saved]) budgetLevel.value = saved;
 budgetLevel.addEventListener("change", renderDetail);
 sectionButtons.forEach((btn) => {
   btn.addEventListener("click", () => setActiveSection(btn.dataset.section));
+});
+timeCards.forEach((card) => {
+  card.addEventListener("mouseenter", () => setActiveSection(card.dataset.section));
 });
 renderDetail();
 setActiveSection(activeSection);
