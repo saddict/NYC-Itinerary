@@ -79,33 +79,33 @@ const mediaData = {
     morning: {
       map: "https://maps.google.com/maps?q=Bryant%20Park%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed",
       photos: [
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Bryant_Park_with_NYPL.jpg", alt: "Bryant Park and the New York Public Library", caption: "Bryant Park and the New York Public Library" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/2011-NYC-Bryant-Park-Library.JPG", alt: "New York Public Library viewed from Bryant Park", caption: "The library as seen from Bryant Park" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Bryant_Park,_Midtown_Manhattan,_New_York_(7237732066).jpg", alt: "Bryant Park in Midtown Manhattan", caption: "Bryant Park as the first stop of the day" }
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Bryant_Park_with_NYPL.jpg", alt: "Bryant Park and the New York Public Library", caption: "Bryant Park opening onto the main New York Public Library", position: "center center" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/2011-NYC-Bryant-Park-Library.JPG", alt: "New York Public Library viewed from Bryant Park", caption: "The library facade from the lawn and promenade side", position: "center center" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Bryant_Park,_Midtown_Manhattan,_New_York_(7237732066).jpg", alt: "Bryant Park in Midtown Manhattan", caption: "The park itself before heading deeper into Midtown", position: "center center" }
       ]
     },
     afternoon: {
       map: "https://maps.google.com/maps?q=Bethesda%20Terrace%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed",
       photos: [
-        { src: "https://d2wsrtli9cxkek.cloudfront.net/media/images/locations/Bethesda-Terrace-and-Fountain-May-2018_18.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=1151.1627906977&q=80&s=1d5129a9f4efae83b55b4adc6de921e9&w=2475", alt: "Bethesda Fountain in Central Park", caption: "Bethesda Fountain in the heart of Central Park" },
-        { src: "https://d2wsrtli9cxkek.cloudfront.net/media/images/locations/Bethesda-Terrace-July-2018_0007.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=1151.1627906977&q=80&s=8b9e49fc448d5144c3e5a8fd6e30b328&w=2475", alt: "Bethesda Terrace in Central Park", caption: "Bethesda Terrace for the middle of the park walk" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Bow_Bridge_in_Central_Park,_NYC.jpg", alt: "Bow Bridge in Central Park", caption: "Bow Bridge as part of the Central Park route" }
+        { src: "https://d2wsrtli9cxkek.cloudfront.net/media/images/locations/Bethesda-Terrace-and-Fountain-May-2018_18.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=1151.1627906977&q=80&s=1d5129a9f4efae83b55b4adc6de921e9&w=2475", alt: "Bethesda Fountain in Central Park", caption: "Bethesda Fountain as the center of the park route", position: "center center" },
+        { src: "https://d2wsrtli9cxkek.cloudfront.net/media/images/locations/Bethesda-Terrace-July-2018_0007.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=1151.1627906977&q=80&s=8b9e49fc448d5144c3e5a8fd6e30b328&w=2475", alt: "Bethesda Terrace in Central Park", caption: "Bethesda Terrace and arcade details along the walk", position: "center center" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Bow_Bridge_in_Central_Park,_NYC.jpg", alt: "Bow Bridge in Central Park", caption: "Bow Bridge for the slower, quieter stretch of the afternoon", position: "center center" }
       ]
     },
     date: {
       map: "https://maps.google.com/maps?q=Times%20Square%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed",
       photos: [
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Times_Square_at_Night_(7823232238).jpg", alt: "Times Square at night", caption: "Times Square once the lights come on" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Shubert_Theatre_NYC_from_Shubert_Alley.jpg", alt: "Shubert Theatre seen from Shubert Alley", caption: "A theater-district stop near Broadway" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/New_York_City_-_Times_Square_(16727268647).jpg", alt: "Times Square in Midtown Manhattan", caption: "The Broadway district in the evening" }
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Times_Square_at_Night_(7823232238).jpg", alt: "Times Square at night", caption: "Times Square once the theater lights take over", position: "center center" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Shubert_Theatre_NYC_from_Shubert_Alley.jpg", alt: "Shubert Theatre seen from Shubert Alley", caption: "Shubert Alley and one of the classic Broadway facades", position: "center center" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/New_York_City_-_Times_Square_(16727268647).jpg", alt: "Times Square in Midtown Manhattan", caption: "The wider theater district around Broadway and 42nd", position: "center center" }
       ]
     },
     insider: {
       map: "https://maps.google.com/maps?q=Hell%27s%20Kitchen%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed",
       photos: [
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Restaurant_Row_0473New_York_City.JPG", alt: "Restaurant Row in the Theater District", caption: "Restaurant Row near the theater district" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Film_Center_Building.jpg", alt: "Film Center Building on Ninth Avenue", caption: "A real Hell's Kitchen and Ninth Avenue streetscape" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Ninth-ave-at-49th-st-facing-south.jpg", alt: "Ninth Avenue in Hell's Kitchen", caption: "Ninth Avenue after the show" }
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Restaurant_Row_0473New_York_City.JPG", alt: "Restaurant Row in the Theater District", caption: "Restaurant Row for the post-show dinner stretch", position: "center center" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Film_Center_Building.jpg", alt: "Film Center Building on Ninth Avenue", caption: "A real Ninth Avenue streetscape in Hell's Kitchen", position: "center center" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Ninth-ave-at-49th-st-facing-south.jpg", alt: "Ninth Avenue in Hell's Kitchen", caption: "The neighborhood feel a few blocks west of Broadway", position: "center center" }
       ]
     }
   },
@@ -113,33 +113,33 @@ const mediaData = {
     morning: {
       map: "https://maps.google.com/maps?q=Battery%20Park%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed",
       photos: [
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Battery_Park.JPG", alt: "Battery Park in Lower Manhattan", caption: "Battery Park at the southern tip of Manhattan" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/South_Ferry_td_(2018-08-02)_28_-_Whitehall_Terminal.jpg", alt: "Whitehall Terminal at South Ferry", caption: "Whitehall Terminal for the ferry portion of the morning" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Staten_Island_Ferry_terminal.jpg", alt: "Staten Island Ferry terminal in Lower Manhattan", caption: "The Staten Island Ferry terminal near Battery Park" }
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Battery_Park.JPG", alt: "Battery Park in Lower Manhattan", caption: "Battery Park at the start of the downtown day", position: "center center" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/South_Ferry_td_(2018-08-02)_28_-_Whitehall_Terminal.jpg", alt: "Whitehall Terminal at South Ferry", caption: "Whitehall Terminal if you take the ferry option", position: "center center" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Staten_Island_Ferry_terminal.jpg", alt: "Staten Island Ferry terminal in Lower Manhattan", caption: "The Staten Island Ferry terminal beside Battery Park", position: "center center" }
       ]
     },
     afternoon: {
       map: "https://maps.google.com/maps?q=9%2F11%20Memorial%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed",
       photos: [
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/National_September_11_Memorial,_World_Trade_Center,_New_York,_New_York_-_Flickr_id_32584500337.jpg", alt: "National September 11 Memorial", caption: "The 9/11 Memorial in Lower Manhattan" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/The_WTC_Transportation_Hub.jpg", alt: "WTC Transportation Hub and One World Trade Center", caption: "The memorial district around the Oculus and One World Trade Center" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/South_Street_Seaport_Historic_District,_New_York_(461740787).jpg", alt: "South Street Seaport Historic District", caption: "South Street Seaport as the afternoon waterfront stop" }
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/National_September_11_Memorial,_World_Trade_Center,_New_York,_New_York_-_Flickr_id_32584500337.jpg", alt: "National September 11 Memorial", caption: "The 9/11 Memorial reflecting pools", position: "center center" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/The_WTC_Transportation_Hub.jpg", alt: "WTC Transportation Hub and One World Trade Center", caption: "The Oculus and One World Trade Center nearby", position: "center center" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/South_Street_Seaport_Historic_District,_New_York_(461740787).jpg", alt: "South Street Seaport Historic District", caption: "The seaport waterfront as the late-afternoon pause", position: "center center" }
       ]
     },
     date: {
       map: "https://maps.google.com/maps?q=Brooklyn%20Bridge%20Park%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed",
       photos: [
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Brooklyn_Bridge_Park_td_(2019-08-23)_043_-_Pier_1.jpg", alt: "Pier 1 promenade in Brooklyn Bridge Park", caption: "Brooklyn Bridge Park at Pier 1" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/2024-11-17-Manhattan_Bridge_Dumbo-0407.jpg", alt: "Manhattan Bridge from Washington Street in DUMBO", caption: "The classic DUMBO Manhattan Bridge view" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Under_the_Brooklyn_bridge_at_Night.jpg", alt: "Brooklyn Bridge at night from DUMBO", caption: "Brooklyn Bridge at night from the DUMBO side" }
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Brooklyn_Bridge_Park_td_(2019-08-23)_043_-_Pier_1.jpg", alt: "Pier 1 promenade in Brooklyn Bridge Park", caption: "Pier 1 in Brooklyn Bridge Park at golden hour", position: "center center" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/2024-11-17-Manhattan_Bridge_Dumbo-0407.jpg", alt: "Manhattan Bridge from Washington Street in DUMBO", caption: "The Manhattan Bridge framed by Washington Street", position: "center center" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Under_the_Brooklyn_bridge_at_Night.jpg", alt: "Brooklyn Bridge at night from DUMBO", caption: "The Brooklyn Bridge once the waterfront turns dark", position: "center center" }
       ]
     },
     insider: {
       map: "https://maps.google.com/maps?q=DUMBO%20Brooklyn%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed",
       photos: [
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Manhattan_Bridge_from_Washington_Street_in_DUMBO,_Brooklyn.jpg", alt: "Washington Street view in DUMBO", caption: "Washington Street in DUMBO" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Dumbo_-_Brooklyn,_NYC.jpg", alt: "DUMBO streetscape in Brooklyn", caption: "A real DUMBO neighborhood street" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Brooklyn_Bridge_Park.jpg", alt: "Brooklyn Bridge Park in Brooklyn", caption: "Brooklyn Bridge Park looking across the waterfront" }
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Manhattan_Bridge_from_Washington_Street_in_DUMBO,_Brooklyn.jpg", alt: "Washington Street view in DUMBO", caption: "Washington Street, the signature DUMBO viewpoint", position: "center center" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Dumbo_-_Brooklyn,_NYC.jpg", alt: "DUMBO streetscape in Brooklyn", caption: "A real street-level look at DUMBO itself", position: "center center" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Brooklyn_Bridge_Park.jpg", alt: "Brooklyn Bridge Park in Brooklyn", caption: "The park edge looking back toward Manhattan", position: "center center" }
       ]
     }
   },
@@ -147,33 +147,33 @@ const mediaData = {
     morning: {
       map: "https://maps.google.com/maps?q=Metropolitan%20Museum%20of%20Art%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed",
       photos: [
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Details_of_the_exterior_of_Metropolitan_Museum_of_Art.jpg", alt: "Exterior of the Metropolitan Museum of Art", caption: "The Metropolitan Museum of Art exterior" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Metropolitan_Museum_of_Art.JPG", alt: "Front of the Metropolitan Museum of Art", caption: "The Met as the first stop of the last day" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Metropolitan_Museum_of_Art_-_From_the_far_side.jpg", alt: "Metropolitan Museum of Art from the far side", caption: "Another view of the museum and its Upper East Side setting" }
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Details_of_the_exterior_of_Metropolitan_Museum_of_Art.jpg", alt: "Exterior of the Metropolitan Museum of Art", caption: "The Met facade and front steps", position: "center center" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Metropolitan_Museum_of_Art.JPG", alt: "Front of the Metropolitan Museum of Art", caption: "The museum entrance at the start of the morning", position: "center top" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Metropolitan_Museum_of_Art_-_From_the_far_side.jpg", alt: "Metropolitan Museum of Art from the far side", caption: "The museum in its Upper East Side setting", position: "center center" }
       ]
     },
     afternoon: {
       map: "https://maps.google.com/maps?q=Center%20for%20Book%20Arts%20New%20York&t=&z=14&ie=UTF8&iwloc=&output=embed",
       photos: [
-        { src: "https://centerforbookarts.org/wp-content/uploads/2022/05/letterpress1_2-1024x683.jpg", alt: "Center for Book Arts letterpress studio", caption: "Inside the Center for Book Arts printshop" },
-        { src: "https://centerforbookarts.org/wp-content/uploads/2025/01/CBAscrapbook1-816x1024.jpg", alt: "Center for Book Arts archival display", caption: "A look at the Center for Book Arts collections and history" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Flatiron_Building,_New_York_City.jpg", alt: "Flatiron Building in Manhattan", caption: "Flatiron nearby after the Center for Book Arts visit" }
+        { src: "https://centerforbookarts.org/wp-content/uploads/2022/05/letterpress1_2-1024x683.jpg", alt: "Center for Book Arts letterpress studio", caption: "The letterpress studio inside the Center for Book Arts", position: "center center" },
+        { src: "https://centerforbookarts.org/wp-content/uploads/2025/01/CBAscrapbook1-816x1024.jpg", alt: "Center for Book Arts archival display", caption: "An exhibition and archive view from the Center", position: "center top" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Flatiron_Building,_New_York_City.jpg", alt: "Flatiron Building in Manhattan", caption: "Flatiron nearby once you head back outside", position: "center center" }
       ]
     },
     date: {
       map: "https://maps.google.com/maps?q=The%20High%20Line%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed",
       photos: [
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/The_High_Line_New_York_(11600580143).jpg", alt: "The High Line in Manhattan", caption: "The High Line for the final sunset walk" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/2016-11_New_York_City_High_Line.jpg", alt: "High Line walkway in New York City", caption: "A real stretch of the High Line path" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/The_High_Line_01.JPG", alt: "The High Line park in Manhattan", caption: "Another view of the High Line before dinner" }
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/The_High_Line_New_York_(11600580143).jpg", alt: "The High Line in Manhattan", caption: "The High Line as the last long walk of the trip", position: "center center" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/2016-11_New_York_City_High_Line.jpg", alt: "High Line walkway in New York City", caption: "A planted stretch of the elevated path", position: "center center" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/The_High_Line_01.JPG", alt: "The High Line park in Manhattan", caption: "The elevated park just before the evening winds down", position: "center center" }
       ]
     },
     insider: {
       map: "https://maps.google.com/maps?q=Greenwich%20Village%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed",
       photos: [
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Greenwich_Village_(27483343909).jpg", alt: "Greenwich Village streetscape", caption: "A real Greenwich Village streetscape" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/NYC_-_Greenwich_Village_-_Gay_Street.JPG", alt: "Gay Street in Greenwich Village", caption: "Gay Street in Greenwich Village" },
-        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Washington_Square_Arch_by_David_Shankbone.jpg", alt: "Washington Square Arch", caption: "Washington Square Arch as part of the Village route" }
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Greenwich_Village_(27483343909).jpg", alt: "Greenwich Village streetscape", caption: "A real street view from Greenwich Village", position: "center center" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/NYC_-_Greenwich_Village_-_Gay_Street.JPG", alt: "Gay Street in Greenwich Village", caption: "Gay Street, one of the quiet Village detours", position: "center center" },
+        { src: "https://commons.wikimedia.org/wiki/Special:FilePath/Washington_Square_Arch_by_David_Shankbone.jpg", alt: "Washington Square Arch", caption: "Washington Square Arch at the heart of the neighborhood", position: "center center" }
       ]
     }
   }
@@ -202,7 +202,7 @@ function renderMedia(section) {
   photoGrid.innerHTML = data.photos
     .map((p) => `
       <figure class="photo-card">
-        <img loading="lazy" src="${p.src}" alt="${p.alt}" />
+        <img loading="lazy" src="${p.src}" alt="${p.alt}" ${p.position ? `style="object-position:${p.position};"` : ""} />
         <figcaption>${p.caption || p.alt}</figcaption>
       </figure>
     `)
