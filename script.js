@@ -6,27 +6,27 @@ const dayCards = document.querySelectorAll(".day-panel");
 
 const itineraryData = {
   budget: {
-    cost: 120,
+    cost: 70,
     days: {
-      1: ["Breakfast cart + Bryant Park.", "Central Park long walk + deli lunch.", "TKTS/off-Broadway + dessert walk."],
-      2: ["Staten Island Ferry skyline run.", "FiDi + 9/11 area + lunch specials.", "Brooklyn Bridge + pizza slice date night."],
-      3: ["Pick one museum with timed value slot.", "Village + SoHo self-guided walk.", "High Line sunset + bakery stop."]
+      1: ["I keep breakfast simple near Bryant Park so we can ease into the city.", "I leave most of the afternoon for a long Central Park walk and an easy lunch.", "I end the night with discount theater options and a dessert stop for us."],
+      2: ["I start with the ferry or Battery Park for skyline views without overspending.", "I mapped a downtown walk that still leaves room for a relaxed lunch.", "I save golden hour for Brooklyn and keep dinner casual but memorable."],
+      3: ["I keep the morning focused on one museum so the day never feels rushed.", "I make the Center for Book Arts the anchor of the afternoon.", "I finish with a sunset walk and one last neighborhood dessert stop."]
     }
   },
   standard: {
-    cost: 220,
+    cost: 100,
     days: {
-      1: ["Cafe breakfast + library + 5th Ave.", "Central Park loop + seated lunch.", "Broadway night + Hell's Kitchen dessert."],
-      2: ["Battery Park + Liberty option.", "Memorial + Wall Street + Seaport lunch.", "DUMBO dinner + skyline walk."],
-      3: ["Museum morning with booked entry.", "Village lunch + SoHo.", "High Line + one paid skyline deck."]
+      1: ["I planned a cozy breakfast by Bryant Park before we wander through the library and Midtown landmarks.", "I give us a real Central Park stretch with a seated lunch built in.", "I hold the evening for a Broadway show and a dessert stop nearby."],
+      2: ["I start us downtown with harbor views and a slower Financial District morning.", "I keep the afternoon scenic, with the memorial area, Wall Street, and a waterfront lunch.", "I planned dinner and skyline time in Brooklyn when the light is best."],
+      3: ["I start with a museum visit that feels intentional instead of overpacked.", "I made the Center for Book Arts a major part of the day, with time to browse, linger, and enjoy Flatiron together.", "I wrap the trip with the High Line at sunset and a final easy dinner."]
     }
   },
   premium: {
-    cost: 380,
+    cost: 185,
     days: {
-      1: ["Brunch start + private park pedicab option.", "Central Park + curated shopping block.", "Prime Broadway seats + cocktail lounge."],
-      2: ["Early ferry + upgraded harbor cruise.", "Private guide style FiDi route + Seaport dining.", "DUMBO dinner reservation + East River ferry."],
-      3: ["Museum VIP/tour slot.", "Village tasting route + SoHo shopping.", "Observation deck at sunset + chef dinner."]
+      1: ["I upgrade the morning with a nicer brunch and a more polished Midtown route.", "I leave room for Central Park highlights and a little shopping together.", "I finish with prime theater seats and a proper late-night drink or dessert."],
+      2: ["I start with a harbor cruise or premium ferry timing for the best views.", "I keep downtown comfortable with a slower lunch and less transit stress.", "I plan a reservation in DUMBO and a polished skyline finish."],
+      3: ["I begin with a premium museum experience or guided visit.", "I still center the day on the Center for Book Arts, then keep the neighborhood wandering unhurried.", "I close with a sunset deck and a special dinner nearby."]
     }
   }
 };
